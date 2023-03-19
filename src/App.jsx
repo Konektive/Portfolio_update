@@ -1,7 +1,7 @@
 import './App.css'
 import NavBar from './components/Nav/NavBar'
 import Projects from './components/Projects'
-import Scroll from './components/Scroll'
+import Header from './components/Header'
 import Contact from './components/Contact'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <NavBar/>
-    <Scroll/>
+    <Header/>
     <Projects/>
     <Contact/>
     </>
