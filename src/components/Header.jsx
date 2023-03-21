@@ -7,24 +7,27 @@ const Header = () => {
 const [scrollValue,setScrollValue] = useState(0)
 const [h1Translate,seth1Translate] = useState(0)
 const [h2Translate,seth2Translate] = useState(0)
-const [photoOpacityValue,setPhotoOpacityValue] = useState(0)
+const [photoOpacityValue,setPhotoOpacityValue] = useState(1)
 
 useEffect(()=>{
 
   function handleScroll() {
     setScrollValue(window.scrollY);
-    console.log(scrollValue)
   }
 
   window.addEventListener("scroll", handleScroll);
 
+  const windowHeight = window.innerHeight
+  const maxScrollY = document.body.clientHeight - windowHeight;
+  const scrollPercentage = 1 - 4*(scrollValue / maxScrollY);
+
   const h1TranslateValue =(scrollValue * .5)
   const h2TranslateValue = -(scrollValue * .5)
-  const photoOpacityValue = scrollValue*0.001
 
   seth1Translate(h1TranslateValue);
   seth2Translate(h2TranslateValue)
-  setPhotoOpacityValue(photoOpacityValue)
+  setPhotoOpacityValue(scrollPercentage)
+  console.log(photoOpacityValue)
 
 
   return () => {
