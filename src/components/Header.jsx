@@ -27,8 +27,6 @@ useEffect(()=>{
   seth1Translate(h1TranslateValue);
   seth2Translate(h2TranslateValue)
   setPhotoOpacityValue(scrollPercentage)
-  console.log(photoOpacityValue)
-
 
   return () => {
     window.removeEventListener("scroll", handleScroll);
