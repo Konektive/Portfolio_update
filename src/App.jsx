@@ -1,7 +1,7 @@
 import './App.css'
 import NavBar from './components/Nav/NavBar'
-import Projects from './components/Projects'
-import Header from './components/Header'
+import Work from './components/Work'
+import Home from './components/home'
 import Contact from './components/Contact'
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
   return (
     <>
     <NavBar/>
-    <Header/>
-    <Projects/>
+    <Home/>
+    <Work/>
     <Contact/>
     </>
   )

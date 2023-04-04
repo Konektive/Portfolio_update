@@ -1,6 +1,5 @@
 import React from "react";
 import Single from "./Portfolio/single";
-// import styles from './Projects.module.css'
 
 const Projects = () => {
   return (

@@ -10,10 +10,10 @@ const DesktopNav = () => {
       <img src={logoimage} alt="" />
     </div>
     <div className={styles.navigation}>
-      <a href="#header">Home</a>
-      <a href="#projects">Portfolio</a>
+      <a href="#home">Home</a>
+      <a href="#projects">Work</a>
+      <a href="#about">About</a>
       <a href="#contact">Contact</a>
-      <a href={CV} download="Krystian_Sporysz_CV">CV</a>
     </div>
   </nav>
   )
