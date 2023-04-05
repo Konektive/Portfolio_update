@@ -1,0 +1,33 @@
+.journey {
+  height: 100vh;
+  text-align: left;
+  width: 90vw;
+  margin: 10% auto;
+}
+.journey article title {
+  color: rgb(151, 151, 151);
+  display: block;
+  padding-left: 5px;
+}
+.journey article h2 {
+  font-size: 55px;
+  margin: 0.5rem 0;
+}
+.steps {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.steps h3 {
+  font-size: 6rem;
+  margin: 0;
+  font-weight: 300;
+}
+.steps h4 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.steps h4 span{
+    color: red;
+}

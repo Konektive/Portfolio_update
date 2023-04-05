@@ -3,7 +3,7 @@ import Single from "./Portfolio/single";
 
 const Projects = () => {
   return (
-    <div id="projects" style={{ height: "200vh" }}>
+    <div id="projects" style={{ height: "200vh"}}>
       <Single />
     </div>
   );

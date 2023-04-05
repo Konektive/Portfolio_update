@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./Home.module.css";
 import { useState } from "react";
-import photo from "../assets/photo.jpeg";
 
 const Header = () => {
   const [scrollValue, setScrollValue] = useState(0);
@@ -43,7 +42,7 @@ const Header = () => {
       transform: `translateX(${h2Translate}px) translateY(-50%)`,
       opacity: `${photoOpacityValue}`,
     },
-    photo: {
+    opacity: {
       opacity: `${photoOpacityValue}`,
     },
   };
@@ -51,18 +50,18 @@ const Header = () => {
   return (
     <div className={styles.head} id="home">
       <main>
-        <div>
-          <img
-            style={changeOnScroll.photo}
-            src={photo}
-            alt="put your image here "
-          />
-        </div>
+        <div style={changeOnScroll.opacity}></div>
       </main>
       <aside>
         <h1 style={changeOnScroll.right}>I'm Krystian Sporysz</h1>
         <h2 style={changeOnScroll.left}>Full-Stack Developer </h2>
         <h2 style={changeOnScroll.right}>based in Poland.</h2>
+        <p style={changeOnScroll.left}>
+          I'm the tech guru you need in your corner when you're ready to take
+          your online game to the next level. With my coding superpowers and
+          fearless problem-solving skills, there's no web application or website
+          that I can't conquer, I'm your guy!
+        </p>
       </aside>
       <div className={styles.background}></div>
     </div>

@@ -1,45 +1,53 @@
-.head{ 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-
-    position: static;
-    height: 90vh;
-    max-height: 1080px;
-
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  height: 100vh;
+  /* max-height: 1080px; */
+}
+.head main {
+  width: 100%;
 }
 
-.head main{
-    flex-basis: 40%;
-}
-.head main div{
-    height: 100%;
-    width: 100%;
-}
-.head img {
-    height: 80%;
-    width: 80%;
+.head main div {
+  height: 80vh;
+  max-height: 866px;
+  background-image: url(https://uploads-ssl.webflow.com/5eb98b2079b4fc247b5a89f3/5eb99a5d7fd124026dae7f13_Hero%20Image.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.head aside{
-    flex-basis: 60%;
+.head aside {
+  margin-left: -67px;
+  padding-right: 5%;
 }
 
-.head aside h1{
-    font-size: 3em;
-    margin: 0;
+.head aside h1 {
+  font-size: 4.5em;
+  margin: 0;
 }
-.head aside h2{
-    margin: 0;
+.head aside h2 {
+  font-size: 4.5em;
+  margin: 0;
+}
+.head aside h2:nth-child(3) {
+  color: grey;
+}
+.head p {
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+  padding-top: 10%;
 }
 
-.background{
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    width: 70%;
-    background-color:#191923 ;
-    z-index: -1999;
+.background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 110vh;
+  width: 65%;
+  background-color: #191923;
+  z-index: -1999;
 }
