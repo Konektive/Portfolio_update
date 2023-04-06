@@ -19,6 +19,38 @@
   margin: 0 auto;
   gap: 2rem;
 }
+.steps div {
+  background-color: rgba(65, 65, 65, 0.205);
+  padding: 10px;
+  border-radius: 20px;
+}
+.steps div:nth-child(1) {
+  transform: translateX(-10vw);
+  z-index: 3;
+}
+.steps div:nth-child(2) {
+  transform: translateX(-40vw);
+  z-index: 2;
+}
+.steps div:nth-child(3) {
+  transform: translateX(-80vw);
+  z-index: 1;
+}
+
+.steps div.show:nth-child(1) {
+  transition: all 1s;
+}
+.steps div.show:nth-child(2) {
+  transition: all 1.2s;
+}
+.steps div.show:nth-child(3) {
+  transition: all 1.4s;
+}
+
+.steps div.show {
+  transform: translateX(0);
+}
+
 .steps h3 {
   font-size: 6rem;
   margin: 0;
@@ -28,6 +60,12 @@
   font-size: 1.5rem;
   margin: 0;
 }
-.steps h4 span{
-    color: red;
+.stepOne h4 span {
+  color: red;
+}
+.stepTwo h4 span {
+  color: green;
+}
+.stepThree h4 span {
+  color: chocolate;
 }
