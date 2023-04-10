@@ -1,0 +1,26 @@
+.skills {
+  background-color: grey;
+  display: flex;
+  margin-bottom: 10%;
+  padding: 3rem;
+  gap: 2rem;
+}
+.skills h2 {
+  font-size: 45px;
+}
+.info {
+  width: 35%;
+}
+
+.skillsAside {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.skillsAside div {
+  background-color: #ccc;
+  padding: 10px;
+  text-align: left;
+}

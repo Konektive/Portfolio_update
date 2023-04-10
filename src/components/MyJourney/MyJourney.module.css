@@ -1,7 +1,6 @@
 .journey {
-  height: 100vh;
+  /* height: 100vh; */
   text-align: left;
-  width: 90vw;
   margin: 10% auto;
 }
 .journey article title {
@@ -24,6 +23,7 @@
   border-radius: 20px;
   transform: translateX(-10%);
   opacity: 0;
+  max-width: 30%;
 }
 
 .steps div.show:nth-child(1) {

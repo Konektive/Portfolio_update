@@ -5,6 +5,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import MyJourney from './components/MyJourney/MyJourney'
+import Skills from './components/Skillset/Skills'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <NavBar/>
     <Home/>
     <MyJourney/>
+    <Skills/>
     <Work/>
     <About/>
     <Contact/>
