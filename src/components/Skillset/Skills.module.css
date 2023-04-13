@@ -1,9 +1,9 @@
 .skills {
-  background-color: grey;
   display: flex;
   margin-bottom: 10%;
   padding: 3rem;
   gap: 2rem;
+  text-align: left;
 }
 .skills h2 {
   font-size: 45px;
@@ -20,9 +20,11 @@
 }
 
 .skillsAside div {
-  background-color: #ccc;
   padding: 10px;
-  text-align: left;
+}
+
+.skillsAside div svg{
+  font-size: 50px;
 }
 
 .skillsAside div:nth-child(1) svg{
