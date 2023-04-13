@@ -11,6 +11,9 @@
 .info {
   width: 35%;
 }
+.info p {
+  color: gray;
+}
 
 .skillsAside {
   display: grid;
@@ -25,6 +28,7 @@
 
 .skillsAside div svg{
   font-size: 50px;
+  margin: .5rem 0;
 }
 
 .skillsAside div:nth-child(1) svg{
@@ -38,4 +42,12 @@ color: var(--typeScript-color)
 }
 .skillsAside div:nth-child(4) svg{
 color: var(--photoShop-color)
+}
+
+.skillsAside div h3 {
+  margin: .2rem 0;
+}
+.skillsAside div p {
+  margin: .2rem 0;
+  color: gray;
 }
