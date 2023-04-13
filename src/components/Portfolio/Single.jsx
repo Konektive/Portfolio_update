@@ -4,35 +4,16 @@ import styles from "./Single.module.css";
 const Single = () => {
   return (
     <>
-    <div className={styles.wrap}>
-      <div class={styles.card}>
+      <a className={styles.glass} href="https://github.com/">
         <div className={styles.image}></div>
-        <div>
-          <h2>Title</h2>
-          <h3>Tech Stack:</h3>
+        <div className="description">
+          <h3>Title</h3>
           <p>
-            Soon you can invest in Sid Harman's new attractive property, set in
-            the heart of Athens.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            voluptatum sunt ea architecto vitae exercitationem.
           </p>
         </div>
-      </div>
-      </div>
-
-      <div className={styles.wrap}>
-      <div class={styles.card}>
-        <div className={styles.image}></div>
-        <div>
-          <h2>Title</h2>
-          <h3>Tech Stack:</h3>
-          <p>
-            Soon you can invest in Sid Harman's new attractive property, set in
-            the heart of Athens.
-          </p>
-        </div>
-      </div>
-      </div>
-
-      
+      </a>
     </>
   );
 };
