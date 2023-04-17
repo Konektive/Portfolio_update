@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Single.module.css";
-
 const Single = () => {
   return (
     <>

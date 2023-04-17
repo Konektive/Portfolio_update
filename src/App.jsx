@@ -1,6 +1,6 @@
 import './App.css'
 import NavBar from './components/Nav/NavBar'
-import Work from './components/Work'
+import Work from './components/Portfolio/Work'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'

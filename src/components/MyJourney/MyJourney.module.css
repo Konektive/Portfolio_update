@@ -21,25 +21,27 @@
 .steps div {
   padding: 10px;
   border-radius: 20px;
+  max-width: 30%;
   transform: translateX(-10%);
   opacity: 0;
-  max-width: 30%;
 }
-
-.steps div.show:nth-child(1) {
-  transition: all 1s;
-}
-.steps div.show:nth-child(2) {
-  transition: all 1.3s;
-}
-.steps div.show:nth-child(3) {
-  transition: all 1.6s;
-}
-
 .steps div.show {
   transform: translateX(0);
   opacity: 1;
+  transition: all .5s;
 }
+
+.steps div.show:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.steps div.show:nth-child(2) {
+  transition-delay: 0.25s;
+}
+.steps div.show:nth-child(3) {
+  transition-delay: 0.4s;
+
+}
+
 
 .steps h3 {
   font-size: 6rem;

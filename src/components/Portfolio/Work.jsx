@@ -1,5 +1,5 @@
 import React from "react";
-import Single from "./Portfolio/single";
+import Single from './Single'
 
 const Projects = () => {
   return (
