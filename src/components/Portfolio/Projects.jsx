@@ -4,8 +4,7 @@ import styles from './Projects.module.css'
 
 const Projects = () => {
   return (
-    <div id="projects" style={{ height: "200vh"}}>
-      <div className={styles.hex}></div>
+    <div className={styles.projects} id="projects">
       <Single />
     </div>
   );
