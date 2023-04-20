@@ -7,30 +7,39 @@
   max-width: 1080px;
   height: 400px;
 }
+
+.project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.project:nth-child(even) .description {
+  border-radius: 15px 0 0 15px ;
+}
+
 .description {
-  background-color: aliceblue;
-  opacity: 0.3;
-  width: 45%;
+  background: #8d8d8d;
+  flex-basis: 50%;
   color: black;
   height: 100%;
-  border-radius: 0 15px 15px 0 ;
-  padding: 1rem;
+  border-radius: 0 15px 15px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding: 1rem;
 }
 
 .glass {
-  background: rgba(161, 161, 161, 0.1);
-  border-radius: 5px;
+  background-color: #191923;
+  border-radius: 5px 0 0 5px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
-  border: 1px solid rgba(161, 161, 161, 0.08);
   height: 400px;
-  padding: 1.5rem;
-  width: 50%;
+  flex-basis: 50%;
+  padding: 1rem;
+}
+.project:nth-child(even) .glass {
+  border-radius: 0 5px 5px 0;
 }
 
 .technologies ul {
