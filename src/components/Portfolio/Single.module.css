@@ -3,43 +3,89 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-width: 900px;
-  max-width: 1080px;
+  min-width: 800px;
+  max-width: 900px;
   height: 400px;
+  background-color: #16161a;
+  border: 5px solid #1e1f21;
+  border-radius: 15px;
+  color: #eeeeee;
+  position: relative;
+  box-sizing: border-box;
+  padding: 7%;
+}
+.project:nth-child(even){
+  transform: translateX(15vw);
+}
+.project:nth-child(odd){
+  transform: translateX(-15vw);
+}
+
+.project > p {
+  font-weight: 600;
+}
+.project:nth-child(odd) > p {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.project:nth-child(even) > p {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+
+.project > a {
+  background-color: #eeeeee;
+  color: #16161a;
+  padding: 1% 1.5%;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.project:nth-child(odd) > a {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+
+.project:nth-child(even) > a {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .project:nth-child(even) {
   flex-direction: row-reverse;
 }
 .project:nth-child(even) .description {
-  border-radius: 15px 0 0 15px ;
+  border-radius: 15px 0 0 15px;
 }
 
 .description {
-  background: #8d8d8d;
-  flex-basis: 50%;
-  color: black;
+  flex-basis: 30%;
   height: 100%;
-  border-radius: 0 15px 15px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 1rem;
+  gap: 2rem;
 }
 
 .glass {
-  background-color: #191923;
-  border-radius: 5px 0 0 5px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(4.5px);
   height: 400px;
-  flex-basis: 50%;
+  flex-basis: 70%;
   padding: 1rem;
-}
-.project:nth-child(even) .glass {
-  border-radius: 0 5px 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .technologies ul {
@@ -47,28 +93,14 @@
   line-height: 1.5rem;
 }
 
-.glass .image {
-  margin: 0 auto;
+.image {
+  height: 80%;
+  flex-basis: 80%;
+  padding: 1rem;
+
   background-position: center;
   background-size: cover;
   height: 70%;
   width: 80%;
   border-radius: 12px;
-  background-image: url(https://cdn.pixabay.com/photo/2020/03/26/08/41/pen-4969580_960_720.jpg);
-}
-
-.glass h3 {
-  margin: 0.5rem;
-  color: rgb(236, 235, 235);
-}
-
-.glass p {
-  text-align: left;
-  color: grey;
-}
-.glass:hover p {
-  color: #0abdc0;
-}
-.glass:hover h3 {
-  color: #0df9ff;
 }

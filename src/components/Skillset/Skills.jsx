@@ -2,12 +2,12 @@ import React from "react";
 import styles from "./Skills.module.css";
 import { SiAdobephotoshop, SiTypescript } from "react-icons/si";
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import {useInView} from 'react-intersection-observer'
+import { useInView } from "react-intersection-observer";
 
 const Skills = () => {
-  const {ref:skillRef, inView:stackIsVisible} = useInView()
+  const { ref: skillRef, inView: stackIsVisible } = useInView();
 
-  const visible = stackIsVisible ? styles.showStack : ""
+  const visible = stackIsVisible ? styles.showStack : "";
   return (
     <div className={styles.skills}>
       <div className={styles.info}>
@@ -26,28 +26,32 @@ const Skills = () => {
           <FaReact />
           <h3>React</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eos?
+            Proficient in building dynamic UIs with React for modern web
+            applications.
           </p>
         </div>
         <div ref={skillRef} className={visible}>
           <FaNodeJs />
           <h3>NodeJS</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eos?
+            Experienced in writing backend server logic with Node.js for
+            scalable and efficient web applications.
           </p>
         </div>
         <div ref={skillRef} className={visible}>
           <SiTypescript />
           <h3>TypeScript</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eos?
+            Skilled in using TypeScript to add static typing and improve code
+            robustness in JavaScript projects.
           </p>
         </div>
         <div ref={skillRef} className={visible}>
           <SiAdobephotoshop />
           <h3>Photoshop</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eos?
+            Proficient in using Photoshop for graphic design and image
+            manipulation to create visually appealing web assets.
           </p>
         </div>
       </aside>
