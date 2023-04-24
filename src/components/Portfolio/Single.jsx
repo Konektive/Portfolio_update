@@ -6,7 +6,7 @@ const Single = () => {
       title: "weather app",
       description:"Real-time weather updates based on your location, keeping you prepared for the current weather conditions.",
       technologies: ["JS", "React", "Tailwind"],
-      url:"https://github.com/",
+      url:"https://github.com/Konektive/Weather-App",
       purpose:'Accurate Forecasts',
       link:'https://media.discordapp.net/attachments/1100137809932722198/1100137834234519692/image.png?width=873&height=440'
     },
@@ -16,7 +16,7 @@ const Single = () => {
       technologies: ["JS", "React", "Tailwind"],
       url:"https://github.com/",
       purpose:'Easy Dining Solutions',
-      link:'https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg'
+      link:'https://cdn.discordapp.com/attachments/1100137809932722198/1100154197866983626/platter-2009590_1920.jpg'
     },
     {
       title: "Blog app",
@@ -24,7 +24,7 @@ const Single = () => {
       technologies: ["JS", "React", "Tailwind"],
       url:"https://github.com/",
       purpose:"Creative Storytelling",
-      link:'https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg'
+      link:'https://cdn.discordapp.com/attachments/1100137809932722198/1100153870849675384/blog-793047_1920.jpg'
     },
   ];
 
