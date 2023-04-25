@@ -6,7 +6,6 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #020202;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,27 +14,27 @@
   scroll-behavior: smooth;
   overflow-x: hidden;
   box-sizing: border-box;
-  --react-color:#61DBFB;
-  --nodeJS-color:#68a063;
-  --typeScript-color:#007acc;
-  --photoShop-color:#00e0e0;
+  --react-color: #61dbfb;
+  --nodeJS-color: #68a063;
+  --typeScript-color: #007acc;
+  --photoShop-color: #00e0e0;
 }
-h1{
+h1 {
   margin: 0;
 }
-h2{
+h2 {
   margin: 0;
 }
-h3{
+h3 {
   margin: 0;
 }
-h4{
+h4 {
   margin: 0;
 }
-h5{
+h5 {
   margin: 0;
 }
-p{
+p {
   margin: 0;
 }
 

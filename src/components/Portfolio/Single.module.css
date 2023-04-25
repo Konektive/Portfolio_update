@@ -6,8 +6,8 @@
   min-width: 800px;
   max-width: 900px;
   height: 400px;
-  background-color: #16161a;
-  border: 5px solid #1e1f21;
+  background-color: #222831;
+  border: 5px solid #393E46;
   border-radius: 15px;
   color: #eeeeee;
   position: relative;
@@ -23,6 +23,7 @@
 
 .project > p {
   font-weight: 600;
+  color: #00ADB5;
 }
 .project:nth-child(odd) > p {
   position: absolute;
@@ -38,7 +39,7 @@
   left: 2%;
 }
 
-.project > a {
+.project > a.code {
   background-color: #eeeeee;
   color: #16161a;
   padding: 1% 1.5%;
@@ -47,13 +48,13 @@
   font-size: 14px;
 }
 
-.project:nth-child(odd) > a {
+.project:nth-child(odd) > a.code {
   position: absolute;
   top: 5%;
   left: 2%;
 }
 
-.project:nth-child(even) > a {
+.project:nth-child(even) > a.code {
   position: absolute;
   top: 5%;
   right: 2%;
@@ -77,6 +78,7 @@
   justify-content: center;
   padding: 1rem;
   gap: 2rem;
+  transition: .5s;
 }
 
 .description h3{
@@ -92,19 +94,16 @@
   align-items: center;
 }
 
-.technologies ul {
-  list-style: none;
-  line-height: 1.5rem;
-}
-
 .image {
   height: 70%;
   width: 80%;
   flex-basis: 80%;
   padding: 1rem;
 
-  background-position: center;
+  background-position:center;
   background-size:cover;
   background-repeat: no-repeat;
   border-radius: 12px;
+  display: block;
+  transition: all .5s;
 }

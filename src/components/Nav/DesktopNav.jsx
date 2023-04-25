@@ -6,7 +6,7 @@ const DesktopNav = () => {
   return (
     <nav className={styles.desktop}>
       <div className={styles.logo}>
-        <img src={logoimage} alt="" />
+        <h2>Krystian.S</h2>
       </div>
       <div className={styles.navigation}>
         <a href="#myjourney">My journey</a>

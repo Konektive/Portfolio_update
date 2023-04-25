@@ -54,10 +54,10 @@
   margin: 0;
 }
 .stepOne h4 span {
-  color: red;
+  color: rgb(255, 72, 72);
 }
 .stepTwo h4 span {
-  color: green;
+  color: rgb(52, 133, 52);
 }
 .stepThree h4 span {
   color: chocolate;
