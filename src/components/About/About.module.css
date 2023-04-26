@@ -1,0 +1,114 @@
+.aboutWrap {
+  width: 100%;
+  height: 100%;
+  max-width: 1080px;
+  margin: 15% auto;
+}
+
+.bar {
+  display: flex;
+  height: 37px;
+  padding-left: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #181823;
+  transition-delay: all 1s;
+}
+.bar div {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  border-radius: 100px;
+  background-color: #8491a0;
+  position: relative;
+}
+
+.bar div:nth-child(1)::before,
+.bar div:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 2px;
+  background-color: black;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.2s;
+}
+.bar div:nth-child(2)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  height: 2px;
+  background: black;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.bar div:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background: black;
+  border-radius: 3px 1px 3px 1px;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.bar div:nth-child(3)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 90%;
+  height: 3px;
+  background: #8491a0;
+  z-index: 2;
+}
+.bar div:nth-child(1)::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.bar div:nth-child(1)::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.bar:hover div:nth-child(1) {
+  background-color: #fe605d;
+}
+.bar:hover div:nth-child(2) {
+  background-color: #ffbc45;
+}
+.bar:hover div:nth-child(3) {
+  background-color: #00cb4f;
+}
+.bar:hover div:nth-child(3)::before {
+  background-color: #00cb4f;
+}
+
+.bar:hover div:nth-child(1)::before,
+.bar:hover div:nth-child(1)::after,
+.bar:hover div:nth-child(2)::after,
+.bar:hover div:nth-child(3)::after {
+  opacity: 1;
+}
+
+.insta {
+  height: 640px;
+  border-radius: 15px;
+  background-image: url(https://cdn.discordapp.com/attachments/1100137809932722198/1100864434672517291/tulips-7884877_1920.jpg);
+  background-position: 50% 50%;
+  background-size: 1024px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}

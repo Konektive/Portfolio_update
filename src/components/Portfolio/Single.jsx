@@ -35,7 +35,7 @@ const Single = () => {
     <>
       {DUMMY_PROJECTS.map((project) => {
         return (
-          <div className={styles.project}>
+          <div key={project.title} className={styles.project}>
             <p>{project.title}</p>
             <a className={styles.code} href={project.code}>Code</a>
             <div className={styles.glass}>
