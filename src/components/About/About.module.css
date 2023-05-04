@@ -35,7 +35,6 @@
   height: 2px;
   background-color: black;
   transform: translate(-50%, -50%);
-  opacity: 0;
   transition: all 0.2s;
 }
 .bar div:nth-child(2)::after {
@@ -48,7 +47,6 @@
   width: 7px;
   height: 2px;
   background: black;
-  opacity: 0;
   transition: all 0.2s;
 }
 .bar div:nth-child(3)::after {
@@ -61,7 +59,6 @@
   height: 60%;
   background: black;
   border-radius: 3px 1px 3px 1px;
-  opacity: 0;
   transition: all 0.2s;
 }
 .bar div:nth-child(3)::before {
@@ -83,24 +80,17 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.bar:hover div:nth-child(1) {
+.bar div:nth-child(1) {
   background-color: #fe605d;
 }
-.bar:hover div:nth-child(2) {
+.bar div:nth-child(2) {
   background-color: #ffbc45;
 }
-.bar:hover div:nth-child(3) {
+.bar div:nth-child(3) {
   background-color: #00cb4f;
 }
-.bar:hover div:nth-child(3)::before {
+.bar div:nth-child(3)::before {
   background-color: #00cb4f;
-}
-
-.bar:hover div:nth-child(1)::before,
-.bar:hover div:nth-child(1)::after,
-.bar:hover div:nth-child(2)::after,
-.bar:hover div:nth-child(3)::after {
-  opacity: 1;
 }
 
 .insta {
