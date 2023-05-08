@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css'
 
 const Contact = () => {
@@ -19,10 +19,12 @@ const Contact = () => {
   return (
     <div className={styles.formWrap}>
     <form ref={form} onSubmit={sendEmail}>
+      <div className={styles.top}>
       <label>Name</label>
       <input type="text" name="user_name" />
       <label>Email</label>
       <input type="email" name="user_email" />
+      </div>
       <label>Message</label>
       <textarea name="message" />
       <input type="submit" value="Send" />
