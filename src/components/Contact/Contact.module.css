@@ -3,24 +3,67 @@
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    height: 70vh;
+}
+.formWrap h2{
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .formWrap form{
-    width: 60%;
-    height: 300px;
+    width: 35%;
     display: flex;
     flex-direction: column;
-    background-color: chocolate;
+    border: 2px solid grey;
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 15px;
     padding: 2rem;
-}
-.top{
-    display: flex;
-    flex-direction: row;
+    gap: 1rem;
 }
 
-.socials {
-    width: 40%;
+form input{
+    width: 35%;
+    height: 2rem;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    padding-left: 2%;
+    box-sizing: border-box;
 }
+
+.formWrap textarea{
+    border-radius: 8px;
+    resize: none;
+    height: 30%;
+    border: none;
+    padding: 2%;
+    font-size: 16px;
+}
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.buttons button{
+    width: 25%;
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons button:nth-child(2){
+    background-color: #007a7c;
+}
+

@@ -1,8 +1,7 @@
 .aboutWrap {
   width: 90%;
   aspect-ratio: 16/9;
-  /* max-width: 1080px; */
-  margin: 15% auto;
+  margin: 5% auto;
 }
 
 .bar {
@@ -95,7 +94,7 @@
 
 .insta {
   height: 640px;
-  border-radius: 15px;
+  border-radius: 0 0 15px 15px;
   background-image: url(https://cdn.discordapp.com/attachments/1100137809932722198/1100864434672517291/tulips-7884877_1920.jpg);
   background-position: 50% 50%;
   background-size: 1024px;
