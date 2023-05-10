@@ -4,7 +4,8 @@
   align-items: center;
   text-align: left;
   height: 100vh;
-  /* max-height: 1080px; */
+  max-width: 1620px;
+  margin: 0 auto;
 }
 .head main {
   width: 100%;

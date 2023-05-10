@@ -43,13 +43,13 @@ const Contact = () => {
           <button type="submit">Send</button>
         </div>
         <aside className={styles.socials}>
-        <a href="https://www.linkedin.com/">
+        <a href="https://www.linkedin.com/in/krystian-sporysz/" target="_blank">
           <img src={linked} alt="" />
         </a>
-        <a href="https://www.github.com/">
+        <a href="https://github.com/Konektive" target="_blank">
           <img src={git} alt="" />
         </a>
-        <a href="https://www.instagram.com/">
+        <a href="https://www.instagram.com/krystian_sporysz/" target="_blank">
           <img src={insta} alt="" />
         </a>
       </aside>

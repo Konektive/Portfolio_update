@@ -1,0 +1,13 @@
+.footer {
+    height: 30vh;
+    width: 100vw;
+    background-color: #0e0e0e ;
+    margin: 0;
+}
+
+.footer a{
+    color: white;
+    display: block;
+    width: 15vw;
+    /* border-bottom: 2px solid white; */
+}

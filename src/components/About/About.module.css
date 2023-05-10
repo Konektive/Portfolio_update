@@ -1,7 +1,9 @@
 .aboutWrap {
-  width: 90%;
+  width: 80%;
   aspect-ratio: 16/9;
   margin: 5% auto;
+  max-width: 1620px;
+
 }
 
 .bar {
