@@ -4,6 +4,7 @@ import styles from "./Contact.module.css";
 import linked from "../../assets/linkedIcon.png";
 import insta from "../../assets/instaIcon.png";
 import git from "../../assets/gitIcon.png";
+import Attributes from './Attributes'
 
 const Contact = () => {
   const form = useRef();
@@ -58,7 +59,7 @@ const Contact = () => {
         </aside>
       </form>
       <aside>
-        <div>
+        {/* <div>
           <h2>Strong Problem-Solving Skills</h2>
           <p>
             As a software developer, I excel in problem-solving. I possess the
@@ -111,7 +112,8 @@ const Contact = () => {
             opportunities for growth and strive for continuous improvement in my
             skills and knowledge as a software developer.
           </p>
-        </div>
+        </div> */}
+    <Attributes></Attributes>
       </aside>
     </div>
   );
