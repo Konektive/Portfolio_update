@@ -7,8 +7,8 @@ const Footer = () => {
       <section>
       <h2>
         <a href="mailto:krystiansporysz@gmail.com">krystiansporysz@gmail.com</a>
+        <a href="tel:+48695444638">+48 695444638</a>
       </h2>
-      <h2><a href="tel:+48695444638">+48 695444638</a></h2>
       </section>
     </div>
   );

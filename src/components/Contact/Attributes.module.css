@@ -1,5 +1,5 @@
 .attrArticle {
-  background: #2c2c2c;
+  background: #3b3b3b;
   width: 400px;
   padding: 20px;
   border-radius: 10px;
@@ -16,10 +16,6 @@
   background: #494964;
   margin-bottom: 10px;
   color: #f8f8f8;
-}
-
-.attrArticle header.active {
-  background: #6366f1;
 }
 
 .attrArticle header.active span {

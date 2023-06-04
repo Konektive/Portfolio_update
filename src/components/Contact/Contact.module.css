@@ -2,11 +2,12 @@
     width: 80%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     margin: 0 auto 5% auto;
     height: 70vh;
     max-height: 700px;
-  max-width: 1620px;
-
+    max-width: 1620px;
+    position: relative;
 }
 .formWrap h2{
     text-align: center;
@@ -70,3 +71,6 @@ form input{
     background-color: #007a7c;
 }
 
+.attributesAside{
+    margin-top: 5%;
+}

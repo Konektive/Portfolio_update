@@ -4,7 +4,7 @@ import styles from "./Contact.module.css";
 import linked from "../../assets/linkedIcon.png";
 import insta from "../../assets/instaIcon.png";
 import git from "../../assets/gitIcon.png";
-import Attributes from './Attributes'
+import Attributes from "./Attributes";
 
 const Contact = () => {
   const form = useRef();
@@ -58,62 +58,9 @@ const Contact = () => {
           </a>
         </aside>
       </form>
-      <aside>
-        {/* <div>
-          <h2>Strong Problem-Solving Skills</h2>
-          <p>
-            As a software developer, I excel in problem-solving. I possess the
-            ability to analyze complex issues, break them down into manageable
-            parts, and develop effective solutions. I enjoy tackling challenges
-            head-on and finding innovative ways to overcome them.
-          </p>
-        </div>
-      </aside>
-      <aside>
-        <div>
-          <h2>Technical Proficiency</h2>
-          <p>
-            I am technically proficient and continuously enhance my skills in
-            programming languages, frameworks, and technologies. I stay
-            up-to-date with the latest industry trends and leverage my knowledge
-            to develop robust and efficient software solutions.
-          </p>
-        </div>
-      </aside>
-      <aside>
-        <div>
-          <h2>Attention to Detail</h2>
-          <p>
-            Attention to detail is one of my strong suits as a developer. I
-            meticulously review and refine my code, ensuring accuracy and
-            minimizing errors. I have a keen eye for spotting bugs and
-            conducting thorough testing to deliver high-quality software.
-          </p>
-        </div>
-      </aside>
-      <aside>
-        <div>
-          <h2>Collaboration and Communication</h2>
-          <p>
-            Collaboration and effective communication are integral to my
-            development approach. I actively engage with team members,
-            stakeholders, and clients, contributing my ideas and actively
-            listening to others. I can articulate technical concepts clearly,
-            fostering a collaborative environment.
-          </p>
-        </div>
-      </aside>
-      <aside>
-        <div>
-          <h2>Adaptability and Continuous Learning</h2>
-          <p>
-            Adaptability is one of my key strengths. I embrace change and stay
-            open to learning new technologies and methodologies. I actively seek
-            opportunities for growth and strive for continuous improvement in my
-            skills and knowledge as a software developer.
-          </p>
-        </div> */}
-    <Attributes></Attributes>
+      <aside className={styles.attributesAside}>
+        <h2>Good Developer Attributes</h2>
+        <Attributes></Attributes>
       </aside>
     </div>
   );

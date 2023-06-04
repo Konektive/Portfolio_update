@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
 
+
 :root {
   font-family: "Sen", sans-serif;
   font-weight: 400;
@@ -18,24 +19,8 @@
   --nodeJS-color: #68a063;
   --typeScript-color: #007acc;
   --photoShop-color: #00e0e0;
-  margin: 0;
 }
-h1 {
-  margin: 0;
-}
-h2 {
-  margin: 0;
-}
-h3 {
-  margin: 0;
-}
-h4 {
-  margin: 0;
-}
-h5 {
-  margin: 0;
-}
-p {
+h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
 
