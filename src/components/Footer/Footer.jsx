@@ -1,17 +1,34 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import { BsTelephone } from "react-icons/bs";
+import { SiGmail } from "react-icons/si";
 
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <section>
-      <h2>
-        <a href="mailto:krystiansporysz@gmail.com">krystiansporysz@gmail.com</a>
-        <a href="tel:+48695444638">+48 695444638</a>
-      </h2>
-      </section>
+      <div className={styles.links}>
+        <h2>Usefull links</h2>
+      </div>
+      <div className={styles.contact}>
+        <h3>Contact</h3>
+        <p>
+          <SiGmail />{" "}
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=krystiansporysz@gmail.com">
+            Krystiansporysz@gmail.com
+          </a>
+        </p>
+        <p>
+          <BsTelephone />
+          695444638
+        </p>
+      </div>
     </div>
   );
 };
 
 export default Footer;
+
+{
+  /* <a href="mailto:krystiansporysz@gmail.com">krystiansporysz@gmail.com</a>
+<a href="tel:+48695444638">695444638</a> */
+}
