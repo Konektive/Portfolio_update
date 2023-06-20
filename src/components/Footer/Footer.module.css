@@ -9,10 +9,14 @@
 .footer p {
   margin: .5rem;
   font-size: 22px;
+  line-height: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
 }
-.footer p svg {
-  margin: 0 .5rem;
-}
+
 
 .footer a {
   color: white;
