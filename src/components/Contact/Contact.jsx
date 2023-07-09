@@ -4,7 +4,7 @@ import styles from "./Contact.module.css";
 import linked from "../../assets/linkedIcon.png";
 import insta from "../../assets/instaIcon.png";
 import git from "../../assets/gitIcon.png";
-import Attributes from "./Attributes";
+import Map from "./Map";
 
 const Contact = () => {
   const form = useRef();
@@ -31,6 +31,9 @@ const Contact = () => {
 
   return (
     <div id="contact" className={styles.formWrap}>
+      <aside className={styles.map}>
+          <Map></Map>
+      </aside>
       <form ref={form} onSubmit={sendEmail}>
         <h2>Let's get in touch!</h2>
         <label>Your Name</label>
@@ -58,10 +61,6 @@ const Contact = () => {
           </a>
         </aside>
       </form>
-      <aside className={styles.attributesAside}>
-        <h2>Good Developer Attributes</h2>
-        <Attributes></Attributes>
-      </aside>
     </div>
   );
 };

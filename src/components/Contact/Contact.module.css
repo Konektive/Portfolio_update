@@ -71,6 +71,7 @@ form input{
     background-color: #007a7c;
 }
 
-.attributesAside{
-    margin-top: 5%;
+.map {
+    width: 50%;
+    height: 100%;
 }
