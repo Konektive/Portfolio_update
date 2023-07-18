@@ -74,4 +74,10 @@ form input{
 .map {
     width: 50%;
     height: 100%;
+    border-radius: 2%;
+    overflow: hidden;
+    border: 2px solid white;
+    padding: 1%;
+    box-sizing: border-box;
+    border-image: linear-gradient(to bottom right, #ffffff 25%, transparent 25%) 1;
 }

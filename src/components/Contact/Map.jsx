@@ -18,7 +18,7 @@ const Map = () => {
         zoom={12}
         center={center}
       >
-        <Marker position={center} />
+        {center && <Marker position={center} />}
       </GoogleMap>
     );
   };
