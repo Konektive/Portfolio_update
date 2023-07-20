@@ -6,7 +6,10 @@ const Projects = () => {
   const [stack, setStack] = useState("");
 
   const pickStack = (value) => {
-    setStack(value);
+    if (setStack.value === stack) {
+      setStack('')
+    }
+    else (setStack(value))
     console.log(stack)
   };
 
