@@ -31,9 +31,6 @@ const Contact = () => {
 
   return (
     <div id="contact" className={styles.formWrap}>
-      <aside className={styles.map}>
-          <Map></Map>
-      </aside>
       <form ref={form} onSubmit={sendEmail}>
         <h2>Let's get in touch!</h2>
         <label>Your Name</label>
@@ -61,6 +58,9 @@ const Contact = () => {
           </a>
         </aside>
       </form>
+      <aside className={styles.map}>
+          <Map></Map>
+      </aside>
     </div>
   );
 };

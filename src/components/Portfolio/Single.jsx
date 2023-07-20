@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Single.module.css";
-const Single = () => {
+const Single = (props) => {
   const DUMMY_PROJECTS = [
     {
       title: "weather app",
@@ -33,6 +33,7 @@ const Single = () => {
 
   return (
     <>
+    <h1>{props.selected}</h1>
       {DUMMY_PROJECTS.map((project) => {
         return (
           <div key={project.title} className={styles.project}>
