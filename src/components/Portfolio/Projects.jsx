@@ -52,6 +52,13 @@ const Projects = () => {
       <h1>Portfolio</h1>
       <button
         onClick={() => {
+          pickStack("");
+        }}
+      >
+        All
+      </button>
+      <button
+        onClick={() => {
           pickStack("html");
         }}
       >
@@ -78,6 +85,7 @@ const Projects = () => {
       >
         TypeScript
       </button>
+
       <div className={styles.projects} id="projects">
         {DUMMY_PROJECTS.filter((project) => {
           if (stack === "") {

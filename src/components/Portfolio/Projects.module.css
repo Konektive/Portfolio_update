@@ -1,9 +1,8 @@
 .projects {
   display: flex;
-  flex-direction: column;
-  gap: 5rem;
+  flex-direction: row;
+  gap: .5rem;
   justify-content: center;
-  align-items: center;
-  margin: 10% auto;
-  max-width: 1620px;
+  /* margin: 5% auto; */
+  height: 100vh;
 }
