@@ -50,7 +50,9 @@ const Projects = () => {
   return (
     <>
       <h1>Portfolio</h1>
+      <div className={styles.portfolioNav}>
       <button
+        className={stack === "" && styles.active}
         onClick={() => {
           pickStack("");
         }}
@@ -58,6 +60,7 @@ const Projects = () => {
         All
       </button>
       <button
+        className={stack === "html" && styles.active}
         onClick={() => {
           pickStack("html");
         }}
@@ -65,6 +68,7 @@ const Projects = () => {
         Html/Css
       </button>
       <button
+        className={stack === "js" && styles.active}
         onClick={() => {
           pickStack("js");
         }}
@@ -72,6 +76,7 @@ const Projects = () => {
         JavaScript
       </button>
       <button
+        className={stack === "react" && styles.active}
         onClick={() => {
           pickStack("react");
         }}
@@ -79,12 +84,14 @@ const Projects = () => {
         React
       </button>
       <button
+        className={stack === "typescript" && styles.active}
         onClick={() => {
           pickStack("typescript");
         }}
       >
         TypeScript
       </button>
+      </div>
 
       <div className={styles.projects} id="projects">
         {DUMMY_PROJECTS.filter((project) => {

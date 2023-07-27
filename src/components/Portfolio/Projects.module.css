@@ -1,8 +1,38 @@
 .projects {
   display: flex;
   flex-direction: row;
-  gap: .5rem;
+  gap: 0.5rem;
   justify-content: center;
-  /* margin: 5% auto; */
+  margin: 5% auto;
   height: 100vh;
+}
+
+.portfolioNav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.portfolioNav button {
+  border: none;
+  width: 5%;
+  height: 2rem;
+  background-color: #191923;
+  border-radius: 5%;
+}
+.portfolioNav button:hover{
+  cursor: pointer;
+  background-color: #19192391;
+  border: 2px solid white;
+}
+
+button.active {
+  background-color: var(--photoShop-color);
+  color: rgb(20, 20, 20);
+}
+button.active:hover {
+  background-color: var(--photoShop-color);
+  opacity: .8;
 }

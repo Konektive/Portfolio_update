@@ -6,13 +6,13 @@
 }
 
 .project::after{
-content: 'Hovered';
+content: '';
 position: absolute;
 top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: red;
+background-color: rgba(255, 0, 0, 0.178);
 display: none;
 }
 .project:hover::after{
@@ -29,3 +29,5 @@ display: none;
   display: block;
   transition: all .5s;
 }
+
+
