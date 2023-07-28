@@ -1,10 +1,11 @@
 .projects {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+  gap: 2rem;
   justify-content: center;
   margin: 5% auto;
   height: 100vh;
+  overflow: hidden;
 }
 
 .portfolioNav{

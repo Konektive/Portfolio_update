@@ -5,11 +5,11 @@ const Single = (props) => {
 
   return (
     <div className={styles.project}>
-        <a
-          style={{ backgroundImage: `url(${link})` }}
-          className={styles.image}
-          href={site}
-        ></a>
+      <div
+        style={{ backgroundImage: `url(${link})` }}
+        className={styles.image}
+      ></div>
+      <a href={site}>+</a>
     </div>
   );
 };
