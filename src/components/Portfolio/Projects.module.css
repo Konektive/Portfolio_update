@@ -1,19 +1,21 @@
 .projects {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 3rem;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 5% auto;
-  height: 100vh;
   overflow: hidden;
+  max-width: 1200px;
 }
 
-.portfolioNav{
+.portfolioNav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+  margin-top: 3rem;
 }
 
 .portfolioNav button {
@@ -23,17 +25,16 @@
   background-color: #191923;
   border-radius: 5%;
 }
-.portfolioNav button:hover{
+.portfolioNav button:hover {
   cursor: pointer;
   background-color: #19192391;
-  border: 2px solid white;
 }
 
 button.active {
-  background-color: var(--photoShop-color);
+  background-color: #d2691e;
   color: rgb(20, 20, 20);
 }
 button.active:hover {
-  background-color: var(--photoShop-color);
-  opacity: .8;
+  background-color: #d2691e;
+  opacity: 0.8;
 }

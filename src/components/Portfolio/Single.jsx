@@ -9,7 +9,11 @@ const Single = (props) => {
         style={{ backgroundImage: `url(${link})` }}
         className={styles.image}
       ></div>
-      <a href={site}>+</a>
+      <div className={styles.links}>
+      <a href={site}>Site</a>
+      <a href={code}>Code</a>
+      </div>
+      <p>{description}</p>
     </div>
   );
 };
