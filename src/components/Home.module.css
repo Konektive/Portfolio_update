@@ -4,8 +4,8 @@
   align-items: center;
   text-align: left;
   height: 100vh;
-  max-width: 1620px;
   margin: 0 auto;
+  max-width: 1620px;
 }
 .head main {
   width: 100%;
@@ -14,7 +14,7 @@
 .head main div {
   height: 80vh;
   max-height: 866px;
-  background-image: url(https://uploads-ssl.webflow.com/5eb98b2079b4fc247b5a89f3/5eb99a5d7fd124026dae7f13_Hero%20Image.jpg);
+  background-image: url(https://cdn.discordapp.com/attachments/1045101615390130229/1136192901257379870/IMG_3328.jpeg);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;

@@ -31,10 +31,10 @@
 }
 
 button.active {
-  background-color: #d2691e;
+  background-color: #4a7ba4;
   color: rgb(20, 20, 20);
 }
 button.active:hover {
-  background-color: #d2691e;
+  background-color: #4a7ba4;
   opacity: 0.8;
 }

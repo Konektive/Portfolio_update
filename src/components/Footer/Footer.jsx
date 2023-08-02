@@ -23,7 +23,7 @@ const Footer = () => {
         </p>
         <p>
           <BsHouseDoor/>
-          Wrocław, ul. Kołłątaja 27/26
+          Wrocław, ul. Hugona Kołłątaja
         </p>
       </div>
     </div>
@@ -32,7 +32,3 @@ const Footer = () => {
 
 export default Footer;
 
-{
-  /* <a href="mailto:krystiansporysz@gmail.com">krystiansporysz@gmail.com</a>
-<a href="tel:+48695444638">695444638</a> */
-}
