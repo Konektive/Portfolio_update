@@ -6,21 +6,26 @@
   margin: 0 auto;
   height: 100%;
 }
-.logo {
-  height: 100%;
-  width: auto;
+.logo{
+  height: 80%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  transform: translateY(10%);
 }
+
 .navigation {
   display: flex;
   gap: 3rem;
+  height: 100%;
 }
 
 .navigation a {
   color: #eeeeee;
-  font-weight: 400;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5% 0 5%;
 }
 
 .navigation a:hover {

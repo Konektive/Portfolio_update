@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./DesktopNav.module.css";
-import logoimage from "../../assets/logo.png";
+import signature from '../../assets/signature.svg'
 
 const DesktopNav = () => {
   return (
     <nav className={styles.desktop}>
       <div className={styles.logo}>
-        <h2>Krystian.S</h2>
+      <img src={signature} alt="Signature" />
       </div>
       <div className={styles.navigation}>
         <a href="#myjourney">My journey</a>

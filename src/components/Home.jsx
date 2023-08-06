@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import styles from "./Home.module.css";
 import { useState } from "react";
 import NavBar from "./Nav/NavBar";
+import linked from "../assets/linkedIcon.png";
+import insta from "../assets/instaIcon.png";
+import git from "../assets/gitIcon.png";
 
 const Header = () => {
   const [scrollValue, setScrollValue] = useState(0);
@@ -34,12 +37,10 @@ const Header = () => {
 
   const changeOnScroll = {
     right: {
-      left: 0,
       transform: `translateX(${h1Translate}px)`,
       opacity: `${photoOpacityValue}`,
     },
     left: {
-      right: 0,
       transform: `translateX(${h2Translate}px)`,
       opacity: `${photoOpacityValue}`,
     },
