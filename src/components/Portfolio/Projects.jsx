@@ -77,53 +77,52 @@ const Projects = () => {
     if (stack === value) {
       setStack("");
     } else setStack(value);
-    console.log(stack);
   };
 
   return (
     <>
       <h1>Portfolio</h1>
       <div className={styles.portfolioNav}>
-      <button
-        className={stack === "" && styles.active}
-        onClick={() => {
-          pickStack("");
-        }}
-      >
-        All
-      </button>
-      <button
-        className={stack === "html" && styles.active}
-        onClick={() => {
-          pickStack("html");
-        }}
-      >
-        Html/Css
-      </button>
-      <button
-        className={stack === "js" && styles.active}
-        onClick={() => {
-          pickStack("js");
-        }}
-      >
-        JavaScript
-      </button>
-      <button
-        className={stack === "react" && styles.active}
-        onClick={() => {
-          pickStack("react");
-        }}
-      >
-        React
-      </button>
-      <button
-        className={stack === "typescript" && styles.active}
-        onClick={() => {
-          pickStack("typescript");
-        }}
-      >
-        TypeScript
-      </button>
+        <button
+          className={stack === "" ? styles.active : undefined}
+          onClick={() => {
+            pickStack("");
+          }}
+        >
+          All
+        </button>
+        <button
+          className={stack === "html" ? styles.active : undefined}
+          onClick={() => {
+            pickStack("html");
+          }}
+        >
+          Html/Css
+        </button>
+        <button
+          className={stack === "js" ? styles.active : undefined}
+          onClick={() => {
+            pickStack("js");
+          }}
+        >
+          JavaScript
+        </button>
+        <button
+          className={stack === "react" ? styles.active : undefined}
+          onClick={() => {
+            pickStack("react");
+          }}
+        >
+          React
+        </button>
+        <button
+          className={stack === "typescript" ? styles.active : undefined}
+          onClick={() => {
+            pickStack("typescript");
+          }}
+        >
+          TypeScript
+        </button>
       </div>
 
       <div className={styles.projects} id="projects">

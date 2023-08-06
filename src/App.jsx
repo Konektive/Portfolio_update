@@ -1,5 +1,4 @@
 import './App.css'
-import NavBar from './components/Nav/NavBar'
 import Projects from './components/Portfolio/Projects'
 import Home from './components/Home'
 import About from './components/About/About'
@@ -12,7 +11,6 @@ function App() {
 
   return (
     <>
-    <NavBar/>
     <Home/>
     <MyJourney/>
     <Skills/>

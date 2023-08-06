@@ -1,4 +1,4 @@
-.head {
+.home {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -6,12 +6,14 @@
   height: 100vh;
   margin: 0 auto;
   max-width: 1620px;
+  width: 90vw;
+  gap: 2rem;
 }
-.head main {
-  width: 100%;
+.home main {
+  flex-basis: 45%;
 }
 
-.head main div {
+.home main div {
   height: 80vh;
   max-height: 866px;
   background-image: url(https://cdn.discordapp.com/attachments/1045101615390130229/1136192901257379870/IMG_3328.jpeg);
@@ -20,27 +22,16 @@
   background-repeat: no-repeat;
 }
 
-.head aside {
-  margin-left: -67px;
-  padding-right: 5%;
+.home aside {
+  flex-basis: 50%;
 }
 
-.head aside h1 {
-  font-size: 4.5em;
-  margin: 0;
-}
-.head aside h2 {
-  font-size: 4.5em;
-  margin: 0;
-}
-.head aside h2:nth-child(3) {
+
+.home aside h2:nth-child(3) {
   color: grey;
 }
-.head p {
-  font-size: 18px;
+.home p {
   line-height: 150%;
-  margin: 0;
-  padding-top: 10%;
 }
 
 .background {
@@ -51,4 +42,13 @@
   width: 65%;
   background-color: #191923;
   z-index: -1999;
+}
+
+@media (max-width:700px) {
+  .home{
+    flex-direction: column;
+  }
+  .home main div{
+    width: 80vw;
+  }
 }

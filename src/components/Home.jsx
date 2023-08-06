@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./Home.module.css";
 import { useState } from "react";
+import NavBar from "./Nav/NavBar";
 
 const Header = () => {
   const [scrollValue, setScrollValue] = useState(0);
@@ -34,12 +35,12 @@ const Header = () => {
   const changeOnScroll = {
     right: {
       left: 0,
-      transform: `translateX(${h1Translate}px) translateY(-50%)`,
+      transform: `translateX(${h1Translate}px)`,
       opacity: `${photoOpacityValue}`,
     },
     left: {
       right: 0,
-      transform: `translateX(${h2Translate}px) translateY(-50%)`,
+      transform: `translateX(${h2Translate}px)`,
       opacity: `${photoOpacityValue}`,
     },
     opacity: {
@@ -48,7 +49,9 @@ const Header = () => {
   };
 
   return (
-    <div className={styles.head} id="home">
+    <>
+    <NavBar/>
+    <div className={styles.home} id="home">
       <main>
         <div style={changeOnScroll.opacity}></div>
       </main>
@@ -65,6 +68,7 @@ const Header = () => {
       </aside>
       <div className={styles.background}></div>
     </div>
+    </>
   );
 };
 
