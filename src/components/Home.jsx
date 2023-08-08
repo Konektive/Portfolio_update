@@ -11,6 +11,7 @@ const Header = () => {
   const [h1Translate, seth1Translate] = useState(0);
   const [h2Translate, seth2Translate] = useState(0);
   const [photoOpacityValue, setPhotoOpacityValue] = useState(1);
+  const isDesktop = window.innerWidth > 768
 
   useEffect(() => {
     function handleScroll() {
@@ -54,13 +55,13 @@ const Header = () => {
     <NavBar/>
     <div className={styles.home} id="home">
       <main>
-        <div style={changeOnScroll.opacity}></div>
+        <div style={isDesktop ? changeOnScroll.opacity : {}}></div>
       </main>
       <aside>
-        <h1 style={changeOnScroll.right}>I'm Krystian Sporysz</h1>
-        <h2 style={changeOnScroll.left}>Full-Stack Developer </h2>
-        <h2 style={changeOnScroll.right}>based in Poland.</h2>
-        <p style={changeOnScroll.left}>
+        <h1 style={isDesktop ? changeOnScroll.right : {}}>I'm Krystian Sporysz</h1>
+        <h2 style={isDesktop ? changeOnScroll.left : {}}>Full-Stack Developer </h2>
+        <h2 style={isDesktop ? changeOnScroll.right : {}}>based in Poland.</h2>
+        <p style={isDesktop ? changeOnScroll.left : {}}>
           I'm the tech guru you need in your corner when you're ready to take
           your online game to the next level. With my coding superpowers and
           fearless problem-solving skills, there's no web application or website
