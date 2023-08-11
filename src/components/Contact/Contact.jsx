@@ -1,10 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
-import linked from "../../assets/linkedIcon.png";
-import insta from "../../assets/instaIcon.png";
-import git from "../../assets/gitIcon.png";
 import Map from "./Map";
+import Socials from "../Socials/Socials";
 
 const Contact = () => {
   const form = useRef();
@@ -43,23 +41,10 @@ const Contact = () => {
           <button>Clear</button>
           <button type="submit">Send</button>
         </div>
-        <aside className={styles.socials}>
-          <a
-            href="https://www.linkedin.com/in/krystian-sporysz/"
-            target="_blank"
-          >
-            <img src={linked} alt="" />
-          </a>
-          <a href="https://github.com/Konektive" target="_blank">
-            <img src={git} alt="" />
-          </a>
-          <a href="https://www.instagram.com/krystian_sporysz/" target="_blank">
-            <img src={insta} alt="" />
-          </a>
-        </aside>
+        <Socials />
       </form>
       <aside className={styles.map}>
-          <Map></Map>
+        <Map></Map>
       </aside>
     </div>
   );

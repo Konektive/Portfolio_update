@@ -22,7 +22,7 @@
   background-repeat: no-repeat;
 }
 
-.home aside {
+.home  aside {
   transform: translateX(10%);
   flex-basis: 50%;
   height: 40vh;

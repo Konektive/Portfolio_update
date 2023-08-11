@@ -10,6 +10,7 @@ import { HiMail } from "react-icons/hi";
 const MobileNav = () => {
   const [menu, setMenu] = useState('home');
 
+
   return (
     <div className={styles.mobile}>
       <a href="#myjourney" className={menu === "story" ? styles.active : undefined}  onClick={()=>{

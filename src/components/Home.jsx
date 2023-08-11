@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import styles from "./Home.module.css";
 import { useState } from "react";
 import NavBar from "./Nav/NavBar";
-import linked from "../assets/linkedIcon.png";
-import insta from "../assets/instaIcon.png";
-import git from "../assets/gitIcon.png";
+import Socials from "./Socials/Socials";
 
 const Header = () => {
   const [scrollValue, setScrollValue] = useState(0);
@@ -57,6 +55,7 @@ const Header = () => {
       <main>
         <div style={isDesktop ? changeOnScroll.opacity : {}}></div>
       </main>
+      {/* <div className={styles.introduction}> */}
       <aside>
         <h1 style={isDesktop ? changeOnScroll.right : {}}>I'm Krystian Sporysz</h1>
         <h2 style={isDesktop ? changeOnScroll.left : {}}>Full-Stack Developer </h2>
@@ -68,6 +67,8 @@ const Header = () => {
           that I can't conquer, I'm your guy!
         </p>
       </aside>
+      {/* <Socials/> */}
+      {/* </div> */}
       <div className={styles.background}></div>
     </div>
     </>

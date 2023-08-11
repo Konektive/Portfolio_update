@@ -44,13 +44,6 @@ form input{
     padding: 2%;
     font-size: 16px;
 }
-.socials {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
-    width: 90%;
-}
 
 .buttons{
     display: flex;
