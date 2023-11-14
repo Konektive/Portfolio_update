@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import styles from "./Home.module.css";
 import { useState } from "react";
 import NavBar from "./Nav/NavBar";
-import Socials from "./Socials/Socials";
 
 const Header = () => {
   const [scrollValue, setScrollValue] = useState(0);

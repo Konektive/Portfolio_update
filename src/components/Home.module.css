@@ -20,10 +20,11 @@
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 56% 44% 55% 45% / 63% 61% 39% 37% ;
 }
 
 .home  aside {
-  transform: translateX(10%);
+  transform: translateX(15%);
   flex-basis: 50%;
   height: 40vh;
   padding: 2%;
