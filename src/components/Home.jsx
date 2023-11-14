@@ -66,8 +66,6 @@ const Header = () => {
           that I can't conquer, I'm your guy!
         </p>
       </aside>
-      {/* <Socials/> */}
-      {/* </div> */}
       <div className={styles.background}></div>
     </div>
     </>

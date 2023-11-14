@@ -79,7 +79,7 @@ form input{
     position: absolute;
     width: 200px;
     height: 200px;
-    z-index: 0;
+    z-index: -1;
     border: 2px solid white;
     border-image: linear-gradient(to bottom right, #ffffff 25%, transparent 25%) 1;
     top: 0;
@@ -90,7 +90,7 @@ form input{
     position: absolute;
     width: 200px;
     height: 200px;
-    z-index: 0;
+    z-index: -1;
     border: 2px solid white;
     border-image: linear-gradient(to top left, #ffffff 25%, transparent 25%) 1;
     bottom: 0;

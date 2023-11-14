@@ -1,5 +1,5 @@
 import React from "react";
-import { useState,useEffect } from "react";
+import { useState} from "react";
 import styles from "./MobileNav.module.css";
 import { AiFillHome } from "react-icons/ai";
 import { BsFillCalendarDateFill } from "react-icons/bs";

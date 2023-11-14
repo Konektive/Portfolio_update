@@ -14,7 +14,7 @@ const DesktopNav = () => {
         <a href="#projects">Work</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href={CV} target="_blank">CV!</a>
+        <a href={CV} target="_blank">CV</a>
       </div>
     </nav>
   );

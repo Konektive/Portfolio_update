@@ -6,17 +6,23 @@
   margin: 0 auto;
   height: 100%;
 }
-.logo{
-  height: 100%;
+.logo {
+  height: 90%;
+  width: 30%;
   display: flex;
   justify-content: center;
-  transform: translateY(10%);
+  align-items: center;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
 }
 
 .navigation {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   height: 100%;
+  width: 40%;
 }
 
 .navigation a {
@@ -26,6 +32,13 @@
   justify-content: center;
   align-items: center;
   padding: 0 5% 0 5%;
+}
+
+.navigation a:last-child {
+  background-color: #4a7ba4;
+}
+.navigation a:last-child:hover {
+  color: white;
 }
 
 .navigation a:hover {
