@@ -1,6 +1,6 @@
 .aboutWrap {
   width: 80%;
-  aspect-ratio: 16/9;
+  /* aspect-ratio: 16/9; */
   margin: 5% auto;
   max-width: 1620px;
 
@@ -95,11 +95,11 @@
 }
 
 .insta {
-  height: 840px;
+  height: 860px;
   border-radius: 0 0 15px 15px;
-  background-image: url('/src/assets/dev.png');
+  background-image: url('/src/assets/dev1.jpg');
   background-position: 50% 50%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
