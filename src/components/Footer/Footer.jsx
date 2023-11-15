@@ -6,9 +6,9 @@ import { SiGmail } from "react-icons/si";
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div className={styles.links}>
+      {/* <div className={styles.links}>
         <h2>Usefull links</h2>
-      </div>
+      </div> */}
       <div className={styles.contact}>
         <p>Direct Contact</p>
         <p>

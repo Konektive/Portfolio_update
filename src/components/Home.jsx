@@ -10,6 +10,10 @@ const Header = () => {
   const [photoOpacityValue, setPhotoOpacityValue] = useState(1);
   const isDesktop = window.innerWidth > 768
 
+  useEffect(()=>{
+    alert('Page still in build. Have a good day! ')
+  },[])
+
   useEffect(() => {
     function handleScroll() {
       setScrollValue(window.scrollY);

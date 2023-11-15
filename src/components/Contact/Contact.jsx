@@ -31,12 +31,18 @@ const Contact = () => {
     <div id="contact" className={styles.formWrap}>
       <form ref={form} onSubmit={sendEmail}>
         <h2>Let's get in touch!</h2>
-        <label>Your Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
+        <label>
+          Your Name: <input type="text" name="user_name" />
+        </label>
+
+        <label>
+          Email: <input type="email" name="user_email" />
+        </label>
+
+        <label className={styles.area}>
+          Message: <input type="email" name="user_email" />
+        </label>
+
         <div className={styles.buttons}>
           <button>Clear</button>
           <button type="submit">Send</button>
