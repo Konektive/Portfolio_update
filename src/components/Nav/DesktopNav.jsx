@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./DesktopNav.module.css";
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/Logo.svg'
 import CV from '../../assets/Krystian Sporysz CV.pdf'
 
 const DesktopNav = () => {
