@@ -5,7 +5,7 @@ import styles from './NavBar.module.css'
 
 const NavBar = () => {
   return (
-    <nav className={styles.navigation}>
+    <nav className={styles.nav}>
     <DesktopNav/>
     <MobileNav/>
     </nav>
