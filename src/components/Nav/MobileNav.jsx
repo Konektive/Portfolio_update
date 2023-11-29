@@ -9,21 +9,19 @@ import { HiMail } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const MobileNav = () => {
-  const [menu, setMenu] = useState("home");
-  const modal = document.querySelector('[data-modal]')
+  const [isOpen, setIsOpen] = useState(true);
 
-  return (
-    <div className={styles.mobile}>
-      <button onClick={()=>{
-        modal.show()
-      }}>
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen);
+  };
+  return (<>
+      <button onClick={toggleMenu}>
         <GiHamburgerMenu />
       </button>
-
-      <dialog data-modal>
+    <div className={`${styles.mobile} ${isOpen ? styles.active : ''}`}>
         <a
           href="#home"
-          className={menu === "home" ? styles.active : undefined}
           onClick={() => {
             setMenu("home");
           }}
@@ -32,7 +30,6 @@ const MobileNav = () => {
         </a>
         <a
           href="#myjourney"
-          className={menu === "story" ? styles.active : undefined}
           onClick={() => {
             setMenu("story");
           }}
@@ -41,7 +38,6 @@ const MobileNav = () => {
         </a>
         <a
           href="#projects"
-          className={menu === "work" ? styles.active : undefined}
           onClick={() => {
             setMenu("work");
           }}
@@ -50,7 +46,6 @@ const MobileNav = () => {
         </a>
         <a
           href="#about"
-          className={menu === "about" ? styles.active : undefined}
           onClick={() => {
             setMenu("about");
           }}
@@ -59,15 +54,14 @@ const MobileNav = () => {
         </a>
         <a
           href="#contact"
-          className={menu === "contact" ? styles.active : undefined}
           onClick={() => {
             setMenu("contact");
           }}
         >
           <HiMail />
         </a>
-      </dialog>
-    </div>
+      </div>
+      </>
   );
 };
 

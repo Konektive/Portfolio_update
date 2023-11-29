@@ -4,20 +4,25 @@
 
 @media(max-width:700px){
     .mobile{
+        position: absolute;
+        top: 1%;
+        right: 2%;
         display: block;
         z-index: 2000;
-        overflow: hidden;
-        position: fixed;
-        top: 1%;
-        left: 2%;
+        width: 10%;
+        height: 100%;
+        text-align: right;
     }
-    .mobile .dialog svg{
-        width: 100px;
-        height: 100px;
+    .mobile button {
+        background-color: transparent;
+        border: none;
+    }
+
+    .mobile{
+        display: none;
+    }
+    .active{
         display: block;
     }
-    .dialog {
-        display: block;
-        margin:0
-    }
+    
 }
