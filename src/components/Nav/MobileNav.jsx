@@ -9,14 +9,14 @@ import { HiMail } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const MobileNav = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
     console.log(isOpen);
   };
   return (<>
-      <button onClick={toggleMenu}>
+      <button className={styles.menuButton} onClick={toggleMenu}>
         <GiHamburgerMenu />
       </button>
     <div className={`${styles.mobile} ${isOpen ? styles.active : ''}`}>
@@ -26,7 +26,8 @@ const MobileNav = () => {
             setMenu("home");
           }}
         >
-          <AiFillHome />
+          
+          <p>Back to the Top</p>
         </a>
         <a
           href="#myjourney"
@@ -34,7 +35,7 @@ const MobileNav = () => {
             setMenu("story");
           }}
         >
-          <BsFillCalendarDateFill />
+          <p>My Journey</p>
         </a>
         <a
           href="#projects"
@@ -42,7 +43,7 @@ const MobileNav = () => {
             setMenu("work");
           }}
         >
-          <BsPersonWorkspace />
+          <p>Portfolio</p>
         </a>
         <a
           href="#about"
@@ -50,7 +51,7 @@ const MobileNav = () => {
             setMenu("about");
           }}
         >
-          <SiAboutdotme />
+          <p>About Me!</p>
         </a>
         <a
           href="#contact"
@@ -58,7 +59,7 @@ const MobileNav = () => {
             setMenu("contact");
           }}
         >
-          <HiMail />
+          <p>Contact ME!</p>
         </a>
       </div>
       </>
