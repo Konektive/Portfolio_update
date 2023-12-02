@@ -1,18 +1,19 @@
 .mobile {
-    display: none;
+    display: block;
 }
 
-@media(max-width:700px){
+/* @media(max-width:700px){
     .mobile{
     display: flex;
     width: 100%;
     flex-direction: column;
     gap: 16px;
     position: absolute;
-    top: 7vh;
+    top: 0;
     box-sizing: border-box;
     padding: 10px;
     background: #161b22;
+    z-index: 9998;
     }
     .mobile p {
         color: white;
@@ -25,6 +26,7 @@
         right: 1%;
         height: 50%;
         width: auto;
+        z-index: 9999;
     }
     .menuButton svg {
         width: 100%;
@@ -39,4 +41,4 @@
         flex-direction: column;
     }
     
-}
+} */

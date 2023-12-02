@@ -1,11 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import styles from "./MobileNav.module.css";
-import { AiFillHome } from "react-icons/ai";
-import { BsFillCalendarDateFill } from "react-icons/bs";
-import { BsPersonWorkspace } from "react-icons/bs";
-import { SiAboutdotme } from "react-icons/si";
-import { HiMail } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const MobileNav = () => {
@@ -15,24 +10,24 @@ const MobileNav = () => {
     setIsOpen(!isOpen);
     console.log(isOpen);
   };
-  return (<>
+  return (
+    <>
       <button className={styles.menuButton} onClick={toggleMenu}>
         <GiHamburgerMenu />
       </button>
-    <div className={`${styles.mobile} ${isOpen ? styles.active : ''}`}>
+      <div className={`${styles.mobile} ${isOpen ? styles.active : ""}`}>
         <a
           href="#home"
           onClick={() => {
-            setMenu("home");
+            toggleMenu();
           }}
         >
-          
           <p>Back to the Top</p>
         </a>
         <a
           href="#myjourney"
           onClick={() => {
-            setMenu("story");
+            toggleMenu();
           }}
         >
           <p>My Journey</p>
@@ -40,7 +35,7 @@ const MobileNav = () => {
         <a
           href="#projects"
           onClick={() => {
-            setMenu("work");
+            toggleMenu();
           }}
         >
           <p>Portfolio</p>
@@ -48,7 +43,7 @@ const MobileNav = () => {
         <a
           href="#about"
           onClick={() => {
-            setMenu("about");
+            toggleMenu();
           }}
         >
           <p>About Me!</p>
@@ -56,13 +51,13 @@ const MobileNav = () => {
         <a
           href="#contact"
           onClick={() => {
-            setMenu("contact");
+            toggleMenu();
           }}
         >
           <p>Contact ME!</p>
         </a>
       </div>
-      </>
+    </>
   );
 };
 

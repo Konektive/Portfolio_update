@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 import Map from "./Map";
@@ -7,48 +7,62 @@ import Socials from "../Socials/Socials";
 const Contact = () => {
   const form = useRef();
 
+  const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccesMessage] = useState("");
+  const [showForm, setShowForm] = useState(true);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_qdly7mf",
+        "templatex07vgqp",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "4D6uJabpuMjrjLriF"
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setSuccesMessage("Your message has been send");
+          setShowForm(false);
         },
         (error) => {
-          console.log(error.text);
+          setErrorMessage(
+            "There was some problem with sending the message, contact me directly."
+          );
+          setShowForm(false);
         }
       );
   };
 
   return (
     <div id="contact" className={styles.formWrap}>
-      <form ref={form} onSubmit={sendEmail}>
-        <h2>Let's get in touch!</h2>
-        <label>
-          Your Name: <input type="text" name="user_name" />
-        </label>
+      {successMessage && <div className={styles.success}>{successMessage}</div>}
+      {errorMessage && <div className={styles.error}>{errorMessage}</div>}
 
-        <label>
-          Email: <input type="email" name="user_email" />
-        </label>
+      {showForm && (
+        <form ref={form} onSubmit={sendEmail}>
+          <h2>Let's get in touch!</h2>
+          <label>
+            Your Name: <input type="text" name="user_name" />
+          </label>
 
-        <label className={styles.area}>
-          Message: <input type="email" name="user_email" />
-        </label>
+          <label>
+            Email: <input type="email" name="user_email" />
+          </label>
 
-        <div className={styles.buttons}>
-          <button>Clear</button>
-          <button type="submit">Send</button>
-        </div>
-        <Socials />
-      </form>
+          <label className={styles.area}>
+            Message: <input type="text" name="user_message" />
+          </label>
+
+          <div className={styles.buttons}>
+            <button>Clear</button>
+            <button type="submit">Send</button>
+          </div>
+          <Socials />
+        </form>
+      )}
+
       <aside className={styles.map}>
         <Map></Map>
       </aside>

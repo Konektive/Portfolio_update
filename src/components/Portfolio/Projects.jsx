@@ -1,16 +1,5 @@
 const DUMMY_PROJECTS = [
   {
-    id: 1,
-    title: "weather app",
-    description:
-      "Real-time weather updates based on your location, keeping you prepared for the current weather conditions.",
-    technologies: ["html"],
-    purpose: "Accurate Forecasts",
-    code: "https://github.com/Konektive/Weather-App",
-    link: "https://media.discordapp.net/attachments/1100137809932722198/1100137834234519692/image.png?width=873&height=440",
-    site: "https://app.netlify.com/teams/konektive/overview",
-  },
-  {
     id: 2,
     title: "Restaurant app",
     description:
@@ -65,6 +54,17 @@ const DUMMY_PROJECTS = [
     link: "https://cdn.discordapp.com/attachments/1045101615390130229/1174076835739480064/image.png?ex=65664742&is=6553d242&hm=a94313341520fbe087bf6a4351c0356538e10362cae7c2949ff32382b6b09d60&",
     site: "https://delicate-baklava-3c28c3.netlify.app",
   },
+  // {
+  //   id: 1,
+  //   title: "weather app",
+  //   description:
+  //     "Real-time weather updates based on your location, keeping you prepared for the current weather conditions.",
+  //   technologies: ["html"],
+  //   purpose: "Accurate Forecasts",
+  //   code: "https://github.com/Konektive/Weather-App",
+  //   link: "https://media.discordapp.net/attachments/1100137809932722198/1100137834234519692/image.png?width=873&height=440",
+  //   site: "https://app.netlify.com/teams/konektive/overview",
+  // },
 ];
 import React, { useState } from "react";
 import Single from "./Single";
