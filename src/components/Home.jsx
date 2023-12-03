@@ -58,7 +58,6 @@ const Header = () => {
       <main>
         <div style={isDesktop ? changeOnScroll.opacity : {}}></div>
       </main>
-      {/* <div className={styles.introduction}> */}
       <aside>
         <h1 style={isDesktop ? changeOnScroll.right : {}}>I'm Krystian Sporysz</h1>
         <h2 style={isDesktop ? changeOnScroll.left : {}}>Full-Stack Developer </h2>

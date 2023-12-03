@@ -11,11 +11,11 @@ const MobileNav = () => {
     console.log(isOpen);
   };
   return (
-    <>
+    <nav className={styles.mobileNavigation}>
       <button className={styles.menuButton} onClick={toggleMenu}>
         <GiHamburgerMenu />
       </button>
-      <div className={`${styles.mobile} ${isOpen ? styles.active : ""}`}>
+      <div className={`${styles.mobile} ${isOpen && styles.active}`}>
         <a
           href="#home"
           onClick={() => {
@@ -57,7 +57,8 @@ const MobileNav = () => {
           <p>Contact ME!</p>
         </a>
       </div>
-    </>
+      </nav>
+
   );
 };
 
