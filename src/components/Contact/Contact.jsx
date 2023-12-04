@@ -11,6 +11,10 @@ const Contact = () => {
   const [successMessage, setSuccesMessage] = useState("");
   const [showForm, setShowForm] = useState(true);
 
+  const clearForm = ()=>{
+    form.current.reset()
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -25,12 +29,14 @@ const Contact = () => {
         (result) => {
           setSuccesMessage("Your message has been send");
           setShowForm(false);
+          setIsLoading(false);
         },
         (error) => {
           setErrorMessage(
             "There was some problem with sending the message, contact me directly."
           );
           setShowForm(false);
+          setIsLoading(false);
         }
       );
   };
@@ -41,22 +47,22 @@ const Contact = () => {
       {errorMessage && <div className={styles.error}>{errorMessage}</div>}
 
       {showForm && (
-        <form ref={form} onSubmit={sendEmail}>
+        <form className={styles.form} ref={form} onSubmit={sendEmail}>
           <h2>Let's get in touch!</h2>
           <label>
-            Your Name: <input type="text" name="user_name" />
+            Your name: <input placeholder="Name..." type="text" name="user_name" />
           </label>
 
           <label>
-            Email: <input type="email" name="user_email" />
+            Email: <input placeholder="xyz@gmail.com" type="email" name="user_email" />
           </label>
 
           <label className={styles.area}>
-            Message: <input type="text" name="user_message" />
+            Message: <textarea placeholder="Message..." type="text" name="user_message" />
           </label>
 
           <div className={styles.buttons}>
-            <button>Clear</button>
+            <button type="reset" onClick={clearForm}>Clear</button>
             <button type="submit">Send</button>
           </div>
           <Socials />

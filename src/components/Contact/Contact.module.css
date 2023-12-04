@@ -1,5 +1,5 @@
 .formWrap {
-    width: 80%;
+    width: 75%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -8,7 +8,6 @@
     height: 70vh;
     max-height: 650px;
     max-width: 1620px;
-    position: relative;
 }
 .formWrap h2{
     text-align: center;
@@ -27,23 +26,39 @@
     gap: 1.5rem;
 }
 
-form input{
-    width: 35%;
+.form {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.form ::placeholder{
+    color: rgb(209, 209, 209);
+}
+
+.form input{
     height: 2rem;
     border-radius: 8px;
     border: none;
     width: 100%;
     box-sizing: border-box;
+    padding: 2%;
 }
-form label {
+.form label {
     margin: 1%;
 }
 
 .area {
     height: 40%;
+    display: block;
 }
-.area input{
-    height: 90%;
+.area textarea{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 15px;
+    border: none;
 }
 
 .buttons{

@@ -60,9 +60,8 @@ const Header = () => {
       </main>
       <aside>
         <h1 style={isDesktop ? changeOnScroll.right : {}}>I'm Krystian Sporysz</h1>
-        <h2 style={isDesktop ? changeOnScroll.left : {}}>Full-Stack Developer </h2>
-        <h2 style={isDesktop ? changeOnScroll.right : {}}>based in Poland.</h2>
-        <p style={isDesktop ? changeOnScroll.left : {}}>
+        <h2 style={isDesktop ? changeOnScroll.left : {}}>Full-Stack Developer <br /> <p>based in Poland.</p> </h2>
+        <p style={isDesktop ? changeOnScroll.right : {}}>
           I'm the tech guru you need in your corner when you're ready to take
           your online game to the next level. With my coding superpowers and
           fearless problem-solving skills, there's no web application or website

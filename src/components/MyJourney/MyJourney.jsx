@@ -37,7 +37,7 @@ const infoVisibility = infoIsVisible ? styles.show : ''
           <h3>03</h3>
           <h4><span>Back</span> to the roots!</h4>
           <p>
-            Started grinding on programming, learned React, TypeScript, Advanced
+            Started grinding on programming, learned React, TypeScript and Advanced
             JavaScript
           </p>
         </div>
