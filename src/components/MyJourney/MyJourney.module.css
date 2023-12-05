@@ -62,3 +62,18 @@
 .stepThree h4 span {
   color: chocolate;
 }
+
+
+@media (max-width: 900px ) {
+  .journey {
+    width: 80%;
+  }
+  .steps{
+    flex-direction: column;
+    width: 80%;
+  }
+  .steps div{
+    max-width: none;
+    width: 100%;
+  }
+}

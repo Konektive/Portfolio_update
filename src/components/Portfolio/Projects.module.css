@@ -38,3 +38,16 @@ button.active:hover {
   background-color: #4a7ba4;
   opacity: 0.8;
 }
+
+@media (max-width: 900px ) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolioNav {
+    width: 100%;
+  }
+  .portfolioNav button{
+    width: auto;
+  }
+}

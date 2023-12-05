@@ -94,4 +94,8 @@
   transition: all .5s;
 }
 
-
+@media (max-width: 900px ) {
+  .project {
+    width: 70%;
+  }
+}

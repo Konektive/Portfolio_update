@@ -72,3 +72,12 @@
   margin: 0.2rem 0;
   color: gray;
 }
+
+@media (max-width: 900px ) {
+  .skills {
+    flex-direction: column;
+  }
+  .info {
+    width: auto;
+  }
+}

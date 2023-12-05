@@ -8,11 +8,11 @@ const Header = () => {
   const [h1Translate, seth1Translate] = useState(0);
   const [h2Translate, seth2Translate] = useState(0);
   const [photoOpacityValue, setPhotoOpacityValue] = useState(1);
-  const isDesktop = window.innerWidth > 768
+  const isDesktop = window.innerWidth > 900
 
-  useEffect(()=>{
-    alert('Page still in build. Have a good day! ')
-  },[])
+  // useEffect(()=>{
+  //   alert('Page still in build. Have a good day! ')
+  // },[])
 
   useEffect(() => {
     function handleScroll() {
