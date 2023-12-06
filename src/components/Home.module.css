@@ -74,8 +74,8 @@
 
   }
   .home aside {
-    height: 20vh;
     width: 80vw;
     transform: translate(10%, -12vh);
+    height: auto;
   }
 }

@@ -46,6 +46,8 @@ button.active:hover {
   }
   .portfolioNav {
     width: 100%;
+    gap: .5rem;
+    z-index: 5;
   }
   .portfolioNav button{
     width: auto;
