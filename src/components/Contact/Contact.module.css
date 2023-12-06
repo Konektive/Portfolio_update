@@ -112,3 +112,22 @@
     bottom: 0;
     right: 0;
 }
+
+
+@media (max-width:900px) {
+    .formWrap {
+        flex-direction: column;
+        height: auto;
+        max-height: none;
+        width: 80%;
+        height: 150vh;
+        gap: 2rem;
+    }
+    .formWrap form {
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+}
