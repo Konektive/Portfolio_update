@@ -16,11 +16,12 @@
 .home main div {
   height: 80vh;
   max-height: 866px;
-  background-image: url(https://cdn.discordapp.com/attachments/1045101615390130229/1136192901257379870/IMG_3328.jpeg);
+  background-image: url(https://cdn.discordapp.com/attachments/1045101615390130229/1136191959065698484/IMG_3328.jpeg?ex=6603c438&is=65f14f38&hm=9aeac6a5d0103feee8efb8c3a3a11f3d81ab073eac572a4c29d0b01a2384f656&);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 56% 44% 55% 45% / 63% 61% 39% 37% ;
+  filter: brightness(.75);
 }
 
 .home  aside {

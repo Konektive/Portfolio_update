@@ -1,5 +1,6 @@
 import './App.css'
-import Projects from './components/Portfolio/Projects'
+// import Projects from './components/Portfolio/Projects'
+import Git from './components/Git/git'
 import Home from './components/Home'
 import About from './components/About/About'
 import Contact from './components//Contact/Contact'
@@ -14,7 +15,8 @@ function App() {
     <Home/>
     <MyJourney/>
     <Skills/>
-    <Projects/>
+    {/* <Projects/> */}
+    <Git/>
     <About/>
     <Contact/>
     <Footer/>
